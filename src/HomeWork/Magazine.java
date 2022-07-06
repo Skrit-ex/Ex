@@ -17,8 +17,15 @@ public class Magazine implements PrintAble{
         this.name = name;
     }
 
+    public static void magazinPrint(PrintAble[] printAbles){
+            for(PrintAble printAble:printAbles){
+                System.out.println(printAble);
+            }
+    }
+
     @Override
     public void print() {
+        System.out.println("Printing magazin " + getName());
 
     }
 
@@ -33,5 +40,12 @@ public class Magazine implements PrintAble{
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    @Override
+    public String toString() {
+        return "Magazine{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

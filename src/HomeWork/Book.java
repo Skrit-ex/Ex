@@ -32,6 +32,13 @@ public class Book implements PrintAble{
 
     @Override
     public void print() {
+        System.out.println("Printing book" + getName());
+    }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

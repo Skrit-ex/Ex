@@ -9,9 +9,9 @@ public class PrintAbleDemo {
 
         PrintAble[] printAbles = {book1,book2,magazine1,magazine2};
         for(PrintAble printAble: printAbles){
-            System.out.print(printAble);
+            printAble.print();
         }
-
+        //Magazine.magazinPrint(printAbles);
 
     }
 }
